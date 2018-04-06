@@ -1,0 +1,8 @@
+<h2>News List</h2>
+<ul>
+  <li *ngFor="let news of newsItems">
+    {{news.title}} - {{news.text}} <a routerLink="/news/{{news.id}}">Edit</a>
+    <button class="delete" title="delete" (click)="deleteNews(news)">Delete</button>
+  </li>
+</ul>
+

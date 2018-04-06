@@ -1,0 +1,12 @@
+<h2>{{ news.title | uppercase }}</h2>
+<div>
+  <label>Title:
+    <input [(ngModel)]="news.title" placeholder="Title"/>
+  </label>
+
+  <label>Text:
+    <input [(ngModel)]="news.text" placeholder="Text"/>
+  </label>
+</div>
+
+<button (click)="save()">save</button>
